@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>ru.praktikum</groupId>
     <artifactId>Final_project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -88,6 +88,12 @@
             <artifactId>allure-selenide</artifactId>
             <version>${allure.version}</version>
         </dependency>
+        <!-- AspectJ для Allure -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
 
         <!-- Lombok -->
         <dependency>
@@ -111,12 +117,6 @@
             <version>5.6.3</version>
         </dependency>
 
-        <!-- AspectJ для Allure -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
